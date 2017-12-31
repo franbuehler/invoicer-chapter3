@@ -59,9 +59,8 @@ jobs:
           command: |
             (
             docker pull franbuehler/modsecurity-crs && \
-            docker run franbuehler/modsecurity-crs
+            docker run -t franbuehler/modsecurity-crs
             )
-          background: true
           
       - deploy:
           # Push application container to dockerhub

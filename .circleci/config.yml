@@ -59,7 +59,7 @@ jobs:
           command: |
             (
             docker pull franbuehler/modsecurity-crs && \
-            docker run -p 80:80 -ti franbuehler/modsecurity-crs
+            docker run -p 8000:8000 -ti franbuehler/modsecurity-crs
             )
           
       - deploy:
